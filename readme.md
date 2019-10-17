@@ -66,19 +66,19 @@ function shortcode_spacemeteo($atts){
     array (
       'planet' => 'Mars'
     )
-  ),$atts);
+  ,$atts));
 
   $temperature;
   switch($planet){
     case "Mars":
-      $temperature = '-40°C'
+      $temperature = '-40°C';
       break;
-    case "Earth"
-      $temperature = '15°C'
+    case "Earth":
+      $temperature = '15°C';
       break;
   }
 
-  return "<h1> Il faut aujourd'hui " . $temperature . " sur " . $planet . "👨‍🚀</h2>" ; 
+  return "<h1> Il faut aujourd'hui " . $temperature . " sur " . $planet . "👨‍🚀</h1>" ; 
 }
 ```
 
